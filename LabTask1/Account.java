@@ -3,6 +3,7 @@
  * Developing basic Java classes with attributes and methods.
  * LabTask - 1(b)
  */
+import java.lang.*;
 public class Account {
     private int accountNumber;
     private String accountHolderName;
