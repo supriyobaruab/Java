@@ -48,7 +48,26 @@ public class Book{
     public int getAvailableQuantity(){
         return availableQuantity;
     }
-
-
-
+    public void addQuantity(int amount){
+        availableQuantity += amount;
+    }
+    public void sellQuantity(int amount){
+        availableQuantity -= amount;
+    }
+    // Paramitarized constructor
+    public Book(String isbn, String bookTitle, String authorName, double price, int availableQuantity){
+        this.isbn = isbn;
+        this.bookTitle = bookTitle;
+        this.authorName = authorName;
+        this.price = price;
+        this.availableQuantity = availableQuantity;
+    }
+    // Show method
+    void showDetails(){
+        System.out.println(isbn);
+        System.out.println(bookTitle);
+        System.out.println(authorName);
+        System.out.println(price);
+        System.out.println(availableQuantity);
+    }
 }
