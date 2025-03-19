@@ -1,7 +1,7 @@
  /*
  * 24-59312-3
  * Developing basic Java classes with attributes and methods.
- * LabTask - a
+ * LabTask - 1(a)
  */
  import java.lang.*;
  public class Student{
