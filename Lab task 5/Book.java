@@ -1,9 +1,7 @@
- /*
- * Developing a basic Java class with attributes, constructors and methods with main
-   method in a separated class.
- * LabTask - 2
+/*
+ * Developing a basic Java program with Inheritance.
+ * Lab task 5
  */
-import java.lang.*;
 public class Book{
     private String isbn;
     private String bookTitle;
@@ -11,18 +9,23 @@ public class Book{
     private double price;
     private int availableQuantity;
 
-    //Default constructor
     public Book(){
-
+        System.out.println("DC Called");
     }
-    // Set methods
+    public Book(String isbn, String bookTitle, String authorName, double price, int availableQuantity){
+        this.isbn = isbn;
+        this.bookTitle = bookTitle;
+        this.authorName = authorName;
+        this.price = price;
+        this.availableQuantity = availableQuantity;
+    }
     public void setIsbn(String isbn){
         this.isbn = isbn;
     }
     public void setBookTitle(String bookTitle){
         this.bookTitle = bookTitle;
     }
-    public void setAuthorname(String authorName){
+    public void setAuthorName(String authorName){
         this.authorName = authorName;
     }
     public void setPrice(double price){
@@ -31,14 +34,13 @@ public class Book{
     public void setAvaiableQuantity(int availableQuantity){
         this.availableQuantity = availableQuantity;
     }
-    // Get methods
     public String getIsbn(){
         return isbn;
     }
     public String getBookTitle(){
         return bookTitle;
     }
-    public String getAuthorName(){
+    public String getAurthorName(){
         return authorName;
     }
     public double getPrice(){
@@ -53,16 +55,7 @@ public class Book{
     public void sellQuantity(int amount){
         availableQuantity -= amount;
     }
-    // Paramitarized constructor
-    public Book(String isbn, String bookTitle, String authorName, double price, int availableQuantity){
-        this.isbn = isbn;
-        this.bookTitle = bookTitle;
-        this.authorName = authorName;
-        this.price = price;
-        this.availableQuantity = availableQuantity;
-    }
-    // Show method
-    void showDetails(){
+    public void showDetails(){
         System.out.println(isbn);
         System.out.println(bookTitle);
         System.out.println(authorName);

@@ -1,7 +1,3 @@
-/*
- * Creating an array of non-primitive data type and accesing it
- * 24-59312-3
- */
 public class Book{
     private String isbn;
     private String bookTitle;
