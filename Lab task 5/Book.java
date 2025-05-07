@@ -10,7 +10,7 @@ public class Book{
     private int availableQuantity;
 
     public Book(){
-        System.out.println("DC Called");
+        
     }
     public Book(String isbn, String bookTitle, String authorName, double price, int availableQuantity){
         this.isbn = isbn;
@@ -56,10 +56,10 @@ public class Book{
         availableQuantity -= amount;
     }
     public void showDetails(){
-        System.out.println(isbn);
-        System.out.println(bookTitle);
-        System.out.println(authorName);
-        System.out.println(price);
-        System.out.println(availableQuantity);
+        System.out.println("ISBN: " + isbn);
+        System.out.println("Title: " + bookTitle);
+        System.out.println("Author: " + authorName);
+        System.out.println("Price: " + price);
+        System.out.println("Available: " + availableQuantity);
     }
 }

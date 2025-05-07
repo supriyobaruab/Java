@@ -13,6 +13,6 @@ public class TextBook extends Book{
     }
     public void showDetails(){
         super.showDetails();
-        System.out.println(standard);
+        System.out.println("Standard : " +standard);
     }
 }
